@@ -13,10 +13,10 @@ jobs:
   
    - name: 📂 Sync files
      id: upload
-     uses: sebastianpopp/ftp-action@releases/v2
+     uses: SamKirkland/FTP-Deploy-Action@4.3.0
      with:
-       host: ${{ secrets.FTP_HOST }}
-       user: ${{ secrets.FTP_USERNAME }}
+       server: ${{ secrets.FTP_HOST }}
+       username: ${{ secrets.FTP_USERNAME }}
        password: ${{ secrets.FTP_PASSWORD }}
-       localDir: './'
-       remoteDir: '/home/www/autodeployments.atwebpages.com/live'
+       local-dir: './'
+       server-dir: '/home/www/autodeployments.atwebpages.com/live/'
