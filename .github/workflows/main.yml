@@ -19,4 +19,4 @@ jobs:
        username: ${{ secrets.FTP_USERNAME }}
        password: ${{ secrets.FTP_PASSWORD }}
        local-dir: './'
-       server-dir: '/home/www/autodeployments.atwebpages.com/'
+       server-dir: '/home/www/autodeployments.atwebpages.com/index.html'
