@@ -15,8 +15,8 @@ jobs:
      id: upload
      uses: SamKirkland/FTP-Deploy-Action@4.3.0
      with:
-       host: ${{ secrets.FTP_HOST }}
+       server: ${{ secrets.FTP_HOST }}
        username: ${{ secrets.FTP_USERNAME }}
        password: ${{ secrets.FTP_PASSWORD }}
-       localPath: './'
-       remotePath: '/home/www/autodeployments.atwebpages.com/index.html'
+       local-dir: './'
+       server-dir: '/home/www/autodeployments.atwebpages.com/'
