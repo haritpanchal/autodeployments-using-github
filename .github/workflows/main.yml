@@ -16,8 +16,8 @@ jobs:
      uses: Creepios/sftp-action@v1.0.3
      with:
        host: ${{ secrets.FTP_HOST }}
-      #  port: 22
+       port: 22
        username: ${{ secrets.FTP_USERNAME }}
        password: ${{ secrets.FTP_PASSWORD }}
        localPath: './'
-       remotePath: '/var/www/html/test-env/production/'
+       remotePath: '/html/harit/'
